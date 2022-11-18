@@ -7,7 +7,7 @@ import AboutSectionsHeader from '../AboutSectionsHeader/AboutSectionsHeader';
 import styles from './AboutVideoSection.module.scss';
 
 // Icons 
-import { CaretDown, VideoCamera } from 'phosphor-react';
+import { CaretDown, CircleNotch, VideoCamera } from 'phosphor-react';
 
 export function AboutVideoSection() {
   return (
@@ -24,6 +24,9 @@ export function AboutVideoSection() {
             frameBorder="0" 
           >
           </iframe>
+          <div className={styles.VideoWhileLoading}>
+            <CircleNotch size={70} />
+          </div>
         </div>
         <script src="https://player.vimeo.com/api/player.js" defer></script>
         <p className={styles.VideoDescription}>

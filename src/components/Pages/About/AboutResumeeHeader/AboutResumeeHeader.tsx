@@ -92,20 +92,6 @@ export function AboutResumeeHeader() {
           width={22} height={22}
         />
       </div>
-      {/* <div className={styles.StatisticsDiv}>
-        <div className={styles.StatisticProjectsDiv}>
-          <span className={styles.StatisticNumber}>+20</span>
-          <span className={styles.StatisticName}>Projetos Desenvolvidos</span>
-        </div>
-        <div className={styles.StatisticProjectsDiv}>
-          <span className={styles.StatisticNumber}>+{calculateDifferenceBetweenExperienceMonths()}</span>
-          <span className={styles.StatisticName}>Meses de Experiência</span>
-        </div>
-        <div className={styles.StatisticProjectsDiv}>
-          <span className={styles.StatisticNumber}>+200</span>
-          <span className={styles.StatisticName}>Contribuições no Github</span>
-        </div>
-      </div> */}
    </>
   )
 }

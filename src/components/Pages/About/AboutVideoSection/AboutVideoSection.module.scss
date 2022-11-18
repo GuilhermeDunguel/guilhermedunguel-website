@@ -11,10 +11,33 @@
   gap: $lg;
 
   .VideoDiv {
+    position: relative;
     iframe {
       width: 45rem;
       height: 25rem;
       border-radius: $radius;
+      z-index: 1;
+    }
+    
+    .VideoWhileLoading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      top: 0;
+      z-index: -1;
+
+      width: 45rem;
+      height: 25rem;
+      
+      border: 2px solid $sky50;
+      border-radius: $radius;
+      
+      svg {
+        color: $sky50;
+        animation: spin infinite 0.8s;
+      }
     }
   }
   .VideoDescription {
@@ -53,4 +76,9 @@
       } 
     }
   }
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
 }

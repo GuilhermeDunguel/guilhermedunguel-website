@@ -20,7 +20,7 @@
   flex-direction: column;
   gap: $xxxl;
 
-  padding: $base $xxxl;
+  padding: $xxxl $uxl;
 
   border-radius: $radius;
 
@@ -53,6 +53,7 @@
     gap: $xxxs;
 
     img {
+      object-fit: cover;
       border-radius: $radius;
     }
 
