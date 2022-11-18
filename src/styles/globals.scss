@@ -1,0 +1,77 @@
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: radial-gradient(50% 50% at 50% 50%, #131B2F 0%, #0F172A 100%);
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: fit;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('/BackgroundBlur.png');
+
+
+  a, button {
+  
+    cursor: pointer;
+  
+    &:focus {
+     outline: 2px solid $blue500; 
+    }
+  }
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $sky600;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $sky500;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $sky300;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 620px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 70%;
+  }
+}

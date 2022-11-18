@@ -1,0 +1,76 @@
+@import '../variables.scss';
+
+.homeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+
+  .homeContentWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $xxxl;
+
+    .mainPhrasesDiv {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: $lg;
+
+      h1 {
+        max-width: 55rem;
+
+        color: $slate50;
+        font-size: $uxl;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      p {
+        max-width: 31rem;
+
+        color: $slate400;
+        font-size: $lg;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+    .buttonsDiv {
+      display: flex;
+      align-items: center;
+      gap: $xl;
+      
+      a {
+        border-radius: $radius;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .homeContainer {
+    .homeContentWrapper {
+      .mainPhrasesDiv {
+        padding: $sm;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .homeContainer {
+    .homeContentWrapper {
+      .mainPhrasesDiv {
+        h1 {
+          padding: $xxs;
+        }
+        p {
+          padding: $xxs;
+        }
+      }
+    }
+  }
+}

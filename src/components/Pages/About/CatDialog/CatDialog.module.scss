@@ -1,0 +1,101 @@
+@import '../../../../styles/variables.scss';
+
+.DialogOverlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+.DialogContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $xxxl;
+
+  padding: $base $xxxl;
+
+  border-radius: $radius;
+
+  background-color: $slate900;
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $xxs;
+
+    text-align: center;
+
+    span {
+      color: $sky50;
+      font-size: $xl;
+      font-weight: 600;
+    }
+    p {
+      max-width: 15rem;
+      color: $slate400;
+      font-size: $base;
+      font-weight: 400;
+    }
+  }
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $xxxs;
+
+    img {
+      border-radius: $radius;
+    }
+
+    span {
+      color: $sky50;
+      font-size: $xs;
+      font-weight: 300;
+      a {
+        color: $sky50;
+        font-weight: 500;
+        &:hover {
+          color: $sky200;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $xxs;
+    
+    .loadingIcon {
+      color: $sky50;
+      animation: spin infinite 0.8s;
+    }
+
+    .randomImageButton {
+      display: flex;
+      align-items: center;
+
+      color: $slate400;
+
+      border: none;
+      background-color: transparent;
+    }
+    .convincedMeButton {
+      text-decoration: none;
+    }
+  }
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}

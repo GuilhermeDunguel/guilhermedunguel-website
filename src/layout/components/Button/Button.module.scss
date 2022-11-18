@@ -1,0 +1,42 @@
+@import '../../../styles/variables.scss';
+
+.ButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $xxs;
+
+  padding: $xxs $xs;
+
+  font-size: $sm;
+  border-radius: $radius;
+
+  transition: 0.15s;
+}
+
+.primary {
+  color: $sky50;
+
+  border: none;
+  background-color: $sky500;
+
+  &:hover {
+    background-color: $sky400;
+  }
+}
+
+.secondary {
+  color: $sky50;
+
+  border: 2px solid $sky50;
+
+  padding: calc($xxs - 2px) calc($xs - 2px);
+
+  background-color: transparent;
+
+  &:hover {
+    color: $slate900;
+
+    background-color: $sky50;
+  }
+}

@@ -1,0 +1,62 @@
+@import '../../../../styles/variables.scss';
+
+.TechnologieWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $xs;
+
+  
+  padding: $xxxs $xxs;
+
+  color: $sky50;
+  font-size: $sm;
+  font-weight: 600;
+
+  border-radius: $radius;
+
+  cursor: pointer;
+
+  &.NextJS {
+    color: $zinc900;
+    background-color: $sky50;
+  }
+  
+  &.ReactJS {
+    background-color: $blue500;
+  }
+
+  &.Sass {
+    background-color: $pink500;
+  }
+
+  &.StitchesJS {
+    background-color: $green500;
+  }
+
+  &.TypeScript {
+    background-color: $blue500;
+  }
+
+  &.JavaScript {
+    color: $zinc900;
+    background-color: $yellow500;
+  }
+
+  &.RadixUI {
+    background-color: $purple500;
+  }
+
+  &.TailwindCSS {
+    background-color: $blue500;
+  }
+
+  &.HTML {
+    background-color: $orange500;
+  }
+
+  &.CSS {
+    background-color: $sky500;
+  }
+}
+

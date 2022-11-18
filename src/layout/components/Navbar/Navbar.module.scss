@@ -1,0 +1,100 @@
+@import '../../../styles/variables.scss';
+
+.NavbarWrapper {
+  position: fixed;
+  top: $xl;
+
+  z-index: 1000;
+
+  left: calc(50% - 12.5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: $xs;
+
+  width: 25rem;
+
+  border-radius: $radius;
+  background-color: $sky50;
+
+  box-shadow: 0px 0px 5px rgba(15, 23, 42, 0.25);
+
+  .LeftSide {
+    display: flex;
+    align-items: center;
+    gap: $xxs;
+
+    a {
+      text-decoration: none;
+      .LinkButton {
+        display: flex;
+        align-items: center;
+        gap: $xxs;
+  
+        padding: $xxxs;
+  
+        color: $sky800;
+        font-size: $sm;
+  
+        border: none;
+        border-radius: $radius;
+        background-color: $blue100;
+
+        transition: 0.15s;
+
+        &:hover {
+          background-color: $blue200;
+        }
+      }
+    }
+  }
+  .RightSide {
+    .SettingsButton {
+      display: flex;
+      align-items: center;
+
+      padding: $xxxs;
+
+      color: $sky800;
+      font-size: $sm;
+
+      border: none;
+      border-radius: $radius;
+      background-color: $blue100;
+
+      transition: 0.15s;
+
+      &:hover {
+        background-color: $blue200;
+      }
+    }
+  }
+  .OpenNavbarButton {
+    position: absolute;
+    left: calc(50% - (0.625rem + $xxxs));
+    bottom: -50px;
+
+    padding: $xxxs;
+
+    color: $sky50;
+    line-height: 0;
+
+    border: none;
+    border-radius: 500px;
+    background-color: $slate800;
+    box-shadow: 0px 0px 5px rgba(15, 23, 42, 0.25);
+  }
+}
+
+.PopoverContent {
+  margin-top: $sm;
+  border-radius: $radius;
+
+  color: $red600;
+  font-size: $sm;
+
+  padding: $xxxs;
+  background-color: $sky50;
+}

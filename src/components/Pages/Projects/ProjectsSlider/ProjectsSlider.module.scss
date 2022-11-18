@@ -1,0 +1,193 @@
+@import '../../../../styles/variables.scss';
+
+.projectsSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $lg;
+  height: 100vh;
+
+  .projectsSlider {
+    .projectDiv {
+      position: relative;
+      cursor: pointer;
+
+      // overflow: hidden;
+
+      max-width: 28.125rem;
+      min-width: 28.125rem;
+      height: 32.5rem;
+      
+      border-radius: $radius;
+
+      background-color: $slate900;
+
+      &:hover {
+        footer {
+          transform: translateY(0%);
+          opacity: 1;
+        }
+      }
+
+      footer {
+        transform: translateY(110%);
+        opacity: 1;
+        transition: all 0.15s ease-in-out;
+        cursor: auto;
+
+        position: absolute;
+        right: $xxs;
+        left: $xxs;
+        bottom: $xxs;
+
+        .projectDetails {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+  
+          margin-bottom: $xxs;
+
+          padding: $xs;
+  
+          border-radius: $radius;
+          background-color: $sky50;
+  
+          box-shadow: 0px 0px 5px rgba(15, 23, 42, 0.25);
+  
+          span {
+            font-size: $xl;
+            font-weight: 600;
+          }
+  
+          .redirectButtons {
+            display: flex;
+            align-items: center;
+            gap: $xxs;
+  
+            .redirectToGithub {
+              padding: $xxxs;
+    
+              line-height: 0;
+    
+              border: none;
+              border-radius: $radius;
+              background-color: $purple200;
+    
+              &:hover {
+                filter: brightness(95%);
+              }
+    
+              a {
+                color: $purple700;
+                text-decoration: none;
+              }
+            }
+    
+            .redirectToDeploy {
+              padding: $xxxs;
+    
+              line-height: 0;
+    
+              border: none;
+              border-radius: $radius;
+              background-color: $green200;
+    
+              &:hover {
+                filter: brightness(95%);
+              }
+    
+              a {
+                color: $green700;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        .projectTechs {
+          display: flex;
+          align-items: center;
+          gap: $xxxs;
+          flex-wrap: wrap;
+
+          span {
+            padding:  $xxs $xs;
+
+            color: $slate900;
+            font-weight: 500;
+            background-color: $sky50;
+            border-radius: $radius;
+          }
+        }
+      }
+
+     
+
+
+    }
+    .LastCardInSlider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      gap: $xxs;
+
+      padding: $base;
+
+      max-width: 28.125rem;
+      min-width: 28.125rem;
+      height: 32.5rem;
+      
+      border-radius: $radius;
+
+      background-color: $slate900;
+
+      span {
+        color: $sky50;
+        font-size: $xxxl;
+        font-weight: bold;
+      }
+
+      p {
+        color: $slate400;
+        font-size: $lg;
+        text-align: center;
+      }
+      
+      .SocialButtons {
+        display: flex;
+        gap: $sm;
+
+        .LinkedinButton, .GithubButton {
+          display: flex;
+          align-items: center;
+          gap: $xxxs;
+
+          margin-top: $sm;
+          padding: $xxxs $xxs;
+
+          text-decoration: none;
+
+          border: none;
+          border-radius: $radius;
+
+          &:hover {
+            filter: brightness(90%);
+          }
+        }
+
+        .LinkedinButton {
+          color: $sky50;
+          background-color: $blue600;
+        }
+
+        .GithubButton {
+          color: $sky50;
+          background-color: $purple600;
+        }
+      }
+    }
+  }
+}

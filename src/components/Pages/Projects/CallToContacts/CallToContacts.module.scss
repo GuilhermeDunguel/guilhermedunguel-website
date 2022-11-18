@@ -1,0 +1,73 @@
+@import '../../../../styles/variables.scss';
+
+.CallToContactSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $xxxl;
+
+  margin-bottom: 185px;
+
+  .CallToContactDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $xxxl;
+
+    a {
+      text-decoration: none;
+    }
+    .CallToContactPhrasesDiv {
+      h1 {
+        max-width: 37.5rem;
+
+        color: $sky50;
+        font-size: $uxl;
+        font-weight: bold;
+        text-align: center;
+
+        margin-bottom: $xs;
+      }
+      p {
+        color: $slate400;
+        text-align: center;
+      }
+    }
+    .ContactModalButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: $xxs;
+
+      padding: $xxs $xs;
+
+      color: $sky50;
+      font-size: $sm;
+      border-radius: $radius;
+      
+      border: none;
+      background-color: $sky500;
+
+      transition: 0.15s;
+
+      &:hover {
+        background-color: $sky400;
+      }
+    }
+  }
+}
+
+.ContactModalOverlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+.ContactModalContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,68 @@
+@import '../../../../styles/variables.scss';
+
+.ResumeeContentSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-image: url('/ResumeeBlur.svg');
+
+  gap: $xxxl;
+
+  padding: 8rem 0;
+
+  .ResumeeContentWrapper {
+    display: flex;
+    align-items: center;
+    gap: $xxxl;
+
+    max-width: 50rem;
+  
+    .ResumeeTextAndButtons {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+  
+      margin: 0 auto;
+  
+      gap: $xxl;
+
+      .ResumeeParagraph {
+        font-size: $base;
+
+        .HelloSpan {
+          font-size: $xl;
+        }
+      }
+  
+      .CVAndSocialLinks {
+        display: flex;
+        align-items: center;
+        gap: $base;
+
+        a {
+          text-decoration: none;
+        }
+
+        .SocialButtonsDiv {
+          display: flex;
+          gap: $base;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 615px) {
+  .ResumeeContentSection {
+    padding: $uxl $xxl;
+    .ResumeeContentWrapper {
+      
+      flex-direction: column;
+    }
+  }
+}
+

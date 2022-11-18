@@ -1,0 +1,56 @@
+@import '../../../../styles/variables.scss';
+
+.VideoSection {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: $lg;
+
+  .VideoDiv {
+    iframe {
+      width: 45rem;
+      height: 25rem;
+      border-radius: $radius;
+    }
+  }
+  .VideoDescription {
+    color: $slate400;
+    max-width: 42.5rem;
+  }
+  a {
+      position: absolute;
+      bottom: $xxxl;
+    .ContentFlareButton {
+      color: $blue50;
+
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+
+@media (max-width: 525px) {
+  .VideoSection {
+    padding: $sm;
+    .VideoDiv {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      } 
+    }
+  }
+}

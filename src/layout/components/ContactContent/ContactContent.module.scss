@@ -1,0 +1,117 @@
+@import '../../../styles/variables.scss';
+
+.contactContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $sm;
+
+  margin: $sm;
+
+  border-radius: $radius;
+  background-color: $sky50;
+
+  box-shadow: 0px 0px 5px rgba(15, 23, 42, 0.25);
+
+  padding: $sm $xs;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0 $xxxs;
+
+    span {
+      font-weight: 500;
+    }
+    
+    button {
+      line-height: 0;
+      border: none;
+      background-color: transparent;
+      border-radius: $radius;
+
+      transition: 0.15s;
+
+      &:hover {
+        color: $red600;
+        background-color: $red100;
+      }
+    }
+  }
+
+  .methodsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $xs;
+
+    .contactMethod {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: $xxxs $xxs;
+
+      border-radius: $radius;
+      background-color: $sky100;
+
+      width: 325px;
+
+      a {
+        padding: $xxxs;
+
+        color: $slate900;
+        line-height: 0;
+
+        transition: 0.15s;
+        border-radius: $radius;
+
+        &:hover {
+          background-color: $blue200;
+        }
+      }
+      
+      .contactIconDiv {
+        display: flex;
+        align-items: center;
+        gap: $xxxs;
+
+        span {
+          font-size: $sm;
+        }
+
+        svg {
+          box-sizing: content-box;
+  
+          padding: 4px;
+  
+          border-radius: $radius;
+        }
+      }
+      .whatsappMethod {
+        svg {
+          color: $green700;
+          background-color: $green200;
+        }
+      }
+      .emailMethod {
+        svg {
+          color: $red700;
+          background-color: $red200;
+        }
+      }
+      .linkedinMethod {
+        svg {
+          color: $blue700;
+          background-color: $blue200;
+        }
+      }
+      .githubMethod {
+        svg {
+          color: $purple700;
+          background-color: $purple200;
+        }
+      }
+    }
+  }
+}

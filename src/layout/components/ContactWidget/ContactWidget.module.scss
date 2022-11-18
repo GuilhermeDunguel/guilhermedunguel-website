@@ -1,0 +1,30 @@
+@import '../../../styles/variables.scss';
+
+.popoverButton {
+  position: fixed;
+  right: $sm;
+  bottom: $sm;
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $sm;
+
+  padding: $xxs;
+
+  color: $sky50;
+
+  border: none;
+  background-color: $sky500;
+  border-radius: 500px;
+  overflow: hidden;
+
+  transition: 0.2s;
+
+  &:hover { 
+    background-color: $sky600;
+  }
+}
+

@@ -1,0 +1,61 @@
+@import '../../../../styles/variables.scss';
+
+.TechsCarouselDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $xxs;
+
+  padding: $sm;
+
+  background-color: $slate800;
+} 
+
+.StatisticsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  background-color: $sky100;
+
+  .StatisticProjectsDiv {
+    display: flex;
+    align-items: center;
+    gap: $xxs;
+
+    padding: $uxl 0;
+
+    span {
+      color: $slate800;
+    }
+
+    .StatisticName {
+      width: 8.75rem;
+      font-size: $lg;
+      font-weight: 500;
+    }
+
+    .StatisticNumber {
+      color: $sky500;
+      font-size: $xxxl;
+      font-weight: 600;
+
+      &::after {
+        margin-left: $xxs;
+        content: '';
+        border: 1px solid $slate800;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+
+  .TechsCarouselDiv {
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+}
+

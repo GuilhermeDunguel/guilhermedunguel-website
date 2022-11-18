@@ -1,0 +1,60 @@
+@import '../../../styles/variables.scss';
+
+.FooterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $base;
+
+  padding: $xxxl;
+
+  color: $slate900;
+
+  background-color: $sky50;
+
+  .SocialDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $xxxs;
+
+    font-size: $sm;
+
+    .SocialIconsWrapper {
+      display: flex;
+      align-items: center;
+      gap: $base;
+
+      img {
+        box-sizing: content-box;
+        width: $xl;
+      }
+    }
+  }
+  .TechsDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $xxxs;
+
+    font-size: $sm;
+    
+    .TechsIconsWrapper {
+      display: flex;
+      align-items: center;
+      gap: $base;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: $xxxs;
+
+        img {
+          width: $xl;
+          filter: brightness(0%);
+        }
+      }
+    }
+  }
+}
