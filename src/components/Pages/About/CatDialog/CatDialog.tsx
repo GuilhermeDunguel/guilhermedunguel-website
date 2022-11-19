@@ -17,8 +17,8 @@ export function CatDialog() {
       <Dialog.Overlay className={styles.DialogOverlay}/>
       <Dialog.Content className={styles.DialogContent}>
         <header className={styles.DialogHeader}>
-          <span>Humm... Você é dos exigente né?</span>
-          <p>Toma aqui a foto de um gatinho pra te convencer.</p>
+          <span>Humm... Você é dos exigentes né?</span>
+          <p>Toma aqui uma foto de um gatinho pra te convencer.</p>
         </header>
         <div>
           {
