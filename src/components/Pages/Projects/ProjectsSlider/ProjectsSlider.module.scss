@@ -186,9 +186,9 @@
   }
 }
 
-@media (max-height: 630px) {
+@media (max-height: 680px) {
   .projectsSection {
-    padding-top: $xxxl;
+    padding-top: calc($xxxl * 2);;
   }
 }
 
