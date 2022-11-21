@@ -83,7 +83,6 @@
                 text-decoration: none;
               }
             }
-    
             .redirectToDeploy {
               padding: $xxxs;
     
@@ -104,7 +103,6 @@
             }
           }
         }
-
         .projectTechs {
           display: flex;
           align-items: center;
@@ -121,10 +119,6 @@
           }
         }
       }
-
-     
-
-
     }
     .LastCardInSlider {
       display: flex;
@@ -189,5 +183,17 @@
         }
       }
     }
+  }
+}
+
+@media (max-height: 630px) {
+  .projectsSection {
+    padding-top: $xxxl;
+  }
+}
+
+@media (max-height: 460px) {
+  .projectsSection {
+    padding-top: calc($xxxl * 2);
   }
 }
