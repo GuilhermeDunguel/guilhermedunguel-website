@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
     gap: $xs;
 
     span {
@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     gap: $xl;
-    
+
     a {
       text-decoration: none;
     }
@@ -52,18 +52,14 @@
 
       transition: 0.15s;
 
-      color: $sky50;
+      color: $slate800;
 
-      border: 2px solid $sky50;
-
-      padding: calc($xxs - 2px) calc($xs - 2px);
-
-      background-color: transparent;
+      border: none;
+      background-color: $blue50;
 
       &:hover {
-        color: $slate900;
-
-        background-color: $sky50;
+        transform: scale(105%);
+        filter: brightness(110%);
       }
     }
   }

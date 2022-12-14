@@ -1,16 +1,27 @@
 @import '../../../../styles/variables.scss';
 
-.Wrapper {
+.WrapperDark,
+.WrapperWhite {
   display: flex;
   align-items: center;
   gap: $xs;
 
   padding: $xs;
-  
-  color: $blue50;
+
   font-size: $sm;
   font-weight: 600;
-  
+
   border-radius: $radius;
+
+  cursor: default;
+}
+
+.WrapperDark {
+  color: $blue50;
   background-color: $slate900;
+}
+
+.WrapperWhite {
+  color: $blue500;
+  background-color: $blue100;
 }

@@ -6,11 +6,7 @@
   justify-content: center;
   flex-direction: column;
 
-  background-repeat: no-repeat;
-  background-position: center ;
-  background-image: url('/ResumeeBlur.svg');
-
-  gap: $xxxl;
+  gap: $uxl;
 
   padding: 8rem 0;
 
@@ -20,24 +16,27 @@
     gap: $xxxl;
 
     max-width: 50rem;
-  
+
     .ResumeeTextAndButtons {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-  
+
       margin: 0 auto;
-  
+
       gap: $xxl;
 
       .ResumeeParagraph {
+        color: $slate600;
         font-size: $base;
+        font-weight: 400;
 
         .HelloSpan {
           font-size: $xl;
+          color: $slate700;
         }
       }
-  
+
       .CVAndSocialLinks {
         display: flex;
         align-items: center;
@@ -60,9 +59,11 @@
   .ResumeeContentSection {
     padding: $uxl $xxl;
     .ResumeeContentWrapper {
-      
       flex-direction: column;
+
+      .ResumeeTextAndButtons {
+        align-items: center;
+      }
     }
   }
 }
-

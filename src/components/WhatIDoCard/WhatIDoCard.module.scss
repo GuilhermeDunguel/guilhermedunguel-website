@@ -1,0 +1,69 @@
+@import '../../styles/variables.scss';
+
+.Wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $base;
+
+  padding: $uxl $xxl;
+
+  height: 100%;
+
+  text-align: center;
+
+  border: 2px solid $blue100;
+  border-radius: $radius;
+
+  background-color: $blue50;
+
+  transition: 0.15s;
+
+  &:hover {
+    cursor: default;
+    transform: rotate(-2deg) scale(105%);
+    box-shadow: 0px 0px 14px $blue100;
+  }
+
+  .CardIcon {
+    box-sizing: content-box;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: $sm;
+
+    border-radius: $radius;
+    background-color: $blue100;
+
+    svg {
+      color: $blue500;
+    }
+  }
+
+  h3 {
+    font-size: $xl;
+    color: $slate700;
+  }
+
+  p {
+    color: $slate500;
+    font-size: $base;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 920px) {
+  .Wrapper {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 920px) {
+  .Wrapper {
+    width: 100%;
+  }
+}

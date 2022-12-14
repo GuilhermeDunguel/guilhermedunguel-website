@@ -15,28 +15,25 @@
 }
 
 .primary {
-  color: $sky50;
+  color: $blue50;
 
   border: none;
-  background-color: $sky500;
+  background-color: $blue500;
 
   &:hover {
-    background-color: $sky400;
+    transform: scale(105%);
+    filter: brightness(110%);
   }
 }
 
 .secondary {
-  color: $sky50;
+  color: $slate800;
 
-  border: 2px solid $sky50;
-
-  padding: calc($xxs - 2px) calc($xs - 2px);
-
-  background-color: transparent;
+  border: none;
+  background-color: $blue50;
 
   &:hover {
-    color: $slate900;
-
-    background-color: $sky50;
+    transform: scale(105%);
+    filter: brightness(110%);
   }
 }

@@ -19,7 +19,7 @@
 
       z-index: 1;
     }
-    
+
     .VideoWhileLoading {
       display: flex;
       align-items: center;
@@ -34,7 +34,7 @@
 
       width: 100%;
       height: 100%;
-      
+
       svg {
         color: $sky50;
         animation: spin infinite 0.8s;
@@ -46,8 +46,15 @@
     max-width: 42.5rem;
   }
   a {
-      position: absolute;
-      bottom: $xxxl;
+    position: absolute;
+    bottom: $xxxl;
+
+    transition: 0.15s;
+
+    &:hover {
+      transform: translateY(10%);
+    }
+
     .ContentFlareButton {
       color: $blue50;
 
@@ -73,12 +80,16 @@
         right: 0;
         width: 100%;
         height: 100%;
-      } 
+      }
     }
   }
 }
 
 @keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

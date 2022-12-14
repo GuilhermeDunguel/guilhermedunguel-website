@@ -14,17 +14,17 @@
 
   padding: $xxs;
 
-  color: $sky50;
+  color: $blue50;
 
   border: none;
-  background-color: $sky500;
+  background-color: $blue500;
   border-radius: 500px;
   overflow: hidden;
 
   transition: 0.2s;
 
-  &:hover { 
-    background-color: $sky600;
+  &:hover {
+    transform: scale(110%);
+    filter: brightness(110%);
   }
 }
-

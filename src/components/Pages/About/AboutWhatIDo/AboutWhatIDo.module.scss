@@ -1,0 +1,30 @@
+@import '../../../../styles/variables.scss';
+
+.Wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $uxl;
+
+  padding-bottom: 8rem;
+
+  background-color: $blue50;
+
+  .CardContainer {
+    display: flex;
+    align-items: center;
+    gap: $xxxl;
+  }
+}
+@media (min-width: 920px) {
+  .CardContainer {
+    height: 22.5rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .CardContainer {
+    padding: 0 $uxl 0 $uxl;
+    flex-direction: column;
+  }
+}

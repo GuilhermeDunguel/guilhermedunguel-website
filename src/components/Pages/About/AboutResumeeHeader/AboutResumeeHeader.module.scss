@@ -9,7 +9,7 @@
   padding: $sm;
 
   background-color: $slate800;
-} 
+}
 
 .StatisticsDiv {
   display: flex;
@@ -51,11 +51,8 @@
 }
 
 @media (max-width: 960px) {
-
   .TechsCarouselDiv {
     justify-content: flex-start;
     gap: 0;
   }
-
 }
-

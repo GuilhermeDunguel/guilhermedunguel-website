@@ -41,17 +41,19 @@
 
       padding: $xxs $xs;
 
-      color: $sky50;
       font-size: $sm;
       border-radius: $radius;
-      
-      border: none;
-      background-color: $sky500;
 
       transition: 0.15s;
 
+      color: $blue50;
+
+      border: none;
+      background-color: $blue500;
+
       &:hover {
-        background-color: $sky400;
+        transform: scale(105%);
+        filter: brightness(110%);
       }
     }
   }
@@ -62,7 +64,7 @@
   width: 100vw;
   height: 100vh;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .ContactModalContent {
