@@ -24,7 +24,8 @@ export default function Home() {
         </div>
         <div className={styles.mainPhrasesDiv}>
           <h1>
-            Desenvolvendo produtos incríveis através do Design e do Código
+            Desenvolvedor Front-End <span>especialista</span> em produtos de{' '}
+            <span>alta qualidade</span>.
           </h1>
           <p>
             Sou um Desenvolvedor Web Front-End & Mobile com conhecimentos de

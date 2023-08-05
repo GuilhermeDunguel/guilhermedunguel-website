@@ -32,8 +32,11 @@
         font-weight: 400;
 
         .HelloSpan {
-          font-size: $xl;
-          color: $slate700;
+          color: $slate600;
+        }
+
+        .actualWork {
+          text-decoration: underline;
         }
       }
 

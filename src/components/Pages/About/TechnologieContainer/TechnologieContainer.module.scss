@@ -6,12 +6,12 @@
   justify-content: space-between;
   gap: $xs;
 
-  
   padding: $xxxs $xxs;
 
   color: $sky50;
   font-size: $sm;
   font-weight: 600;
+  white-space: nowrap;
 
   border-radius: $radius;
 
@@ -21,17 +21,13 @@
     color: $zinc900;
     background-color: $sky50;
   }
-  
+
   &.ReactJS {
     background-color: $blue500;
   }
 
   &.Sass {
     background-color: $pink500;
-  }
-
-  &.StitchesJS {
-    background-color: $green500;
   }
 
   &.TypeScript {
@@ -51,12 +47,17 @@
     background-color: $blue500;
   }
 
-  &.HTML {
-    background-color: $orange500;
+  &.Flutter {
+    color: $sky50;
+    background-color: $flutter;
   }
 
-  &.CSS {
-    background-color: $sky500;
+  &.Styled-Components {
+    color: $zinc900;
+    background-color: $yellow500;
+  }
+
+  &.Storybook {
+    background-color: $pink500;
   }
 }
-

@@ -23,22 +23,30 @@ export function AboutResumeeContent() {
         <Image src={'/myPhoto.svg'} width={254} height={356} alt={''} />
         <div className={styles.ResumeeTextAndButtons}>
           <p className={styles.ResumeeParagraph}>
-            <strong className={styles.HelloSpan}>Olá!</strong> Me chamo
-            Guilherme Dunguel mas pode me chamar de “Gui”, moro no Rio de
-            Janeiro e sou Desenvolvedor Web Front-End apaixonado pelo que faço
-            desde 2021.
+            <strong className={styles.HelloSpan}>Olá!</strong> Eu sou o
+            Guilherme, mas pode me chamar de “Gui”, moro no Rio de Janeiro e sou
+            Desenvolvedor Front-End apaixonado pelo que faço desde 2021.
           </p>
+
           <p className={styles.ResumeeParagraph}>
-            Desde que comecei tenho estado em constante aprendizado, sempre me
-            colocando a disposição para aprender uma nova tecnologia ou
-            ferramenta, porque acredito que na programação não existe um limite,
-            sempre há um próximo nível e eu estou sempre em busca dele.
+            Desde que comecei tenho estado em constante aprendizado, não meço
+            esforços para aprender algo novo. Essa mentalidade me possibilitou
+            resolver problemas complexos e desafiadores no meu dia a dia.
           </p>
+
           <p className={styles.ResumeeParagraph}>
-            Hoje em dia atuo no mercado como Freelancer, desenvolvendo
-            aplicações do Figma ao código, e escrevo posts no Medium para
-            transmitir conhecimento a outras pessoas.
+            Hoje em dia trabalho na{' '}
+            <a
+              href="https://www.hypesoft.com.br/"
+              target="blank"
+              className={styles.actualWork}
+            >
+              Hypesoft
+            </a>
+            , onde sou responsável por criar, manter e aprimorar aplicações Web
+            e Mobile, utilizando principalmente NextJS e Flutter.
           </p>
+
           <div className={styles.CVAndSocialLinks}>
             <a
               href={'/guilhermedunguelcurriculum.pdf'}
